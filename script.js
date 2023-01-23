@@ -87,4 +87,3 @@ button.forEach((clickBtn) => {
 })
 clear.addEventListener('click', resetValues);
 plusMinus.addEventListener('click', signChange);
-

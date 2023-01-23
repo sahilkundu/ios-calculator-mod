@@ -124,5 +124,26 @@ button:active{
     padding: 10px;
 }
 
+@media screen and (max-width:375px){
+    .cal-container{
+        width: 350px;
+    height: 650px;
+    }
+    .cal-dsply{
+        height: 150px;
+    }
+    .cal-dsply h1{
+        font-size: 60px;
+    }
+    .cal-btn{
+        height: 400px ;
+    }
+    button{
+        border-radius: 90px;
+    }
+    #updating-value{
+        height: 70px;
+    }
 
+}
 
