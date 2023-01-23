@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.cal-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 20px 20px -5px rgba(0, 0, 0, 0.8);
+    width: 1000px;
+    height: 950px;
+}
+
+.cal-dsply {
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    height: 200px;
+}
+
+.cal-dsply h1 {
+    margin: 0px;
+    padding: 15px;
+    font-size: 140px;
+    font-weight: 100px;
+    overflow-x: auto;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(69, 68, 68);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(61, 61, 61);
+}
+
+.cal-btn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    margin: 0px;
+    background-color: black;
+    height: 650px;
+}
+
+.equal-cls {
+    grid-column: -2;
+}
+
+.decimal {
+    grid-column: -3;
+}
+
+.op-color {
+    background-color: rgb(229, 224, 224);
+    color: rgb(0, 0, 0);
+}
+
+.op-yellow {
+    color: white;
+    background-color: rgb(255, 128, 0);
+}
+
+.op-yellow:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 128, 0);
+}
+
+.num-color {
+    background-color: rgb(80, 76, 76);
+    color: white;
+}
+.num-color1 {
+    background-color: rgb(80, 76, 76);
+    color: white;
+}
+
+button {
+    border-radius: 50px;
+    border: none;
+    font-size: 25px;
+}
+
+.zero {
+    grid-column: 1/2 span;
+
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+}
+button:active{
+    transform: translateY(0.6px);
+}
+#updating-value{
+    color: white;
+    background-color: black;
+    width: auto;
+    height: 60px;
+    overflow-x: auto;
+    font-size: 50px;
+    padding: 10px;
+}
+
+
+
